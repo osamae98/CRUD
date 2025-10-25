@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Bookmark your favorite sites">
+    <meta name="keywords" content="Bookmark, favorite sites, save links">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Icon" type="image/x-icon" href="./assets/images/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <section class="container hero-section ">
+        <div class="text-center ">
+            <h1 class="position-relative w-auto highlight">Bookmarker</h1>
+        </div>
+        <div
+            class="form-container w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+
+            <h2 class="text-center">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+
+
+            <div class="site-name w-100 d-flex flex-column justify-content-center ">
+                <label for=" BookmarkName" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i> Site
+                    Name
+                </label>
+                <input type="text" class="form-control" id="bookmarkName" placeholder="Bookmark Name">
+            </div>
+
+            <div class="site-url w-100 d-flex flex-column justify-content-center">
+                <label for="bookmarkURL" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Site URL
+                </label>
+                <input type="text" class="form-control" id="bookmarURL" placeholder="Website URL">
+            </div>
+
+            <button class="btn-submit btn px-5">Submit</button>
+        </div>
+
+        <table class="table mt-4 text-center bg-light align-middle">
+            <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </tr>
+            <!-- Dynamic rows will be added here by JS -->
+        </table>
+
+    </section>
+
+
+
+
+    <!-- bootstrap JS -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
